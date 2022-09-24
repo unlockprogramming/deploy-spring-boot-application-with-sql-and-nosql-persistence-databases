@@ -1,5 +1,10 @@
 # Deploy spring boot application with sql and nosql persistence databases
 
+## Minimum Requirements
+    - JDK 11
+    - Apache Maven 3.6.0
+    - Docker
+
 ## Start docker postgres
 
 ```bash
@@ -9,5 +14,6 @@ docker run --name example-postgres -e POSTGRES_DB=example -e POSTGRES_PASSWORD=e
 ## Start docker mongodb
 
 ```bash
-docker run --expose 5432:5432 --name example-mongodb -e MONGO_INITDB_ROOT_USERNAME=example -e MONGO_INITDB_ROOT_PASSWORD=examplepw -d mongo
+docker run --name example-mongo -e MONGO_INITDB_ROOT_USERNAME=mongo-user -e MONGO_INITDB_ROOT_PASSWORD=mongopw -p 27017:27017 mongo
 ```
+

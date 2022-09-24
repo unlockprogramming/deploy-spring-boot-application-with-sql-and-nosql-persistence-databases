@@ -6,6 +6,7 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import javax.persistence.Entity;
+import java.time.LocalDate;
 import java.util.Objects;
 
 @Entity
@@ -19,6 +20,12 @@ public class Student {
     private String id;
 
     private String name;
+
+    private String email;
+
+    private String address;
+
+    private LocalDate dateOfBirth;
 
     @Override
     public boolean equals(Object o) {
