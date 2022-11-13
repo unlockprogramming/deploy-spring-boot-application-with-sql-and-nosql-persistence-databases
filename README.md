@@ -8,7 +8,7 @@
 ## Start docker postgres
 
 ```bash
-docker run --name example-postgres -e POSTGRES_DB=example -e POSTGRES_PASSWORD=examplepw -d -p 5432:5432 postgres
+docker run --name example-postgres -e POSTGRES_DB=example-postgres -e POSTGRES_PASSWORD=postgrespw -d -p 5432:5432 postgres
 ```
 
 ## Start docker mongodb
